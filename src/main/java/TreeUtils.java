@@ -21,7 +21,7 @@ public class TreeUtils {
      */
     public static Integer subTreeSum(TreeNode treeNode) {
         if (treeNode == null)
-            throw new NullPointerException("Cannot compute sum of nodes of null tree");
+            throw new NullPointerException("Cannot compute sum of nodes in null tree");
 
         return getNodeList(treeNode).stream()
                 .map(TreeNode::getValue)
@@ -37,7 +37,7 @@ public class TreeUtils {
      */
     public static Double subTreeAverage(TreeNode treeNode) {
         if (treeNode == null)
-            throw new NullPointerException("Cannot compute average of nodes of null tree");
+            throw new NullPointerException("Cannot compute average of nodes in null tree");
 
         List<TreeNode> treeNodes = getNodeList(treeNode);
         return (double) treeNodes.stream().map(TreeNode::getValue).mapToInt(Integer::intValue).sum() / (double) treeNodes.size();
@@ -51,7 +51,7 @@ public class TreeUtils {
      */
     public static Double subTreeMedian(TreeNode treeNode) {
         if (treeNode == null)
-            throw new NullPointerException("Cannot compute median of nodes of null tree");
+            throw new NullPointerException("Cannot compute median of nodes in null tree");
 
         List<Integer> nodes = getNodeList(treeNode).stream()
                 .map(TreeNode::getValue)

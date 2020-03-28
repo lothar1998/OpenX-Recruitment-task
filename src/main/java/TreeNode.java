@@ -9,7 +9,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class TreeNode {
-    private Integer value;
+    private int value;
     private TreeNode parent;
     private TreeNode left;
     private TreeNode right;
@@ -18,10 +18,10 @@ public class TreeNode {
      * Construct tree node element with given offspring and node's value
      *
      * @param value value of node
-     * @param left  left son of node
-     * @param right right son of node
+     * @param left  left child of node
+     * @param right right child of node
      */
-    public TreeNode(Integer value, TreeNode left, TreeNode right) {
+    public TreeNode(int value, TreeNode left, TreeNode right) {
         this.value = value;
         this.left = left;
         this.right = right;
